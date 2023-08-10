@@ -11,9 +11,9 @@ const { verifyUser, adminOnly } = require("../middleware/authUser.js");
 const router = express.Router();
 
 router.post("/users", createUser);
-router.get("/users", verifyUser, adminOnly, getUser);
-router.get("/users/:id", verifyUser, adminOnly, getUserById);
-router.patch("/users/:id", verifyUser, adminOnly, updateUser);
+router.get("/users", getUser);
+router.get("/users/:id", getUserById);
+router.patch("/users/:id", verifyUser, updateUser);
 router.delete("/users/:id", verifyUser, adminOnly, deleteUser);
 
 module.exports = router;

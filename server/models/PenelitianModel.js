@@ -17,13 +17,64 @@ const PenelitianModel = db.define(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    anggota: {
+    ketuaNidn: {
       type: DataTypes.STRING,
-      allowNull: false,
+    },
+    ketuaJafung: {
+      type: DataTypes.STRING,
+    },
+    anggota1: {
+      type: DataTypes.STRING,
+    },
+    anggota1Nidn: {
+      type: DataTypes.STRING,
+    },
+    anggota1Jafung: {
+      type: DataTypes.STRING,
+    },
+    anggota2: {
+      type: DataTypes.STRING,
+    },
+    anggota2Nidn: {
+      type: DataTypes.STRING,
+    },
+    anggota2Jafung: {
+      type: DataTypes.STRING,
+    },
+    anggota3: {
+      type: DataTypes.STRING,
+    },
+    anggota3Nidn: {
+      type: DataTypes.STRING,
+    },
+    anggota3Jafung: {
+      type: DataTypes.STRING,
+    },
+    anggota4: {
+      type: DataTypes.STRING,
+    },
+    anggota4Nidn: {
+      type: DataTypes.STRING,
+    },
+    anggota4Jafung: {
+      type: DataTypes.STRING,
     },
     judul: {
       type: DataTypes.STRING,
       allowNull: false,
+    },
+    penelitianAkhir: {
+      type: DataTypes.STRING, // You can adjust this to the appropriate data type
+      allowNull: false,
+    },
+    url: {
+      type: DataTypes.STRING, // You can adjust this to the appropriate data type
+    },
+    status: {
+      type: DataTypes.STRING,
+    },
+    acc: {
+      type: DataTypes.STRING,
     },
   },
   {

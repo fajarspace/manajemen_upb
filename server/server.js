@@ -1,7 +1,6 @@
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
-const cookieParser = require("cookie-parser");
 const session = require("express-session");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
@@ -46,8 +45,8 @@ app.use(
     name: "MyCoolWebAppCookieName",
     cookie: {
       secure: "auto", // required for cookies to work on AUTO
-      httpOnly: false,
-      sameSite: "none",
+      // httpOnly: false,
+      // sameSite: "none",
     },
   })
 );
@@ -58,7 +57,6 @@ app.use(
   })
 );
 
-app.use(cookieParser());
 app.use(express.json());
 
 // Route - Welcome Page
